@@ -1,2 +1,11 @@
 port: 8888
 highlighter: pygments
+
+
+# Setup
+title:               rosicky1985
+tagline:             '只想做的更好'
+description:         '广告产品技术人的博客'
+url:                 rosicky1985.github.io
+baseurl:             /
+paginate:            5
