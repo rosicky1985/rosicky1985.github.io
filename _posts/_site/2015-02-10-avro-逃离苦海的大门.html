@@ -1,0 +1,43 @@
+<h2 id="section">1 现状</h2>
+
+<ul>
+  <li>用csv作为对象序列化方法，hardcoding 序列化/反序列化</li>
+  <li>实时系统，升级改变schema</li>
+</ul>
+
+<h2 id="section-1">2 设计</h2>
+
+<h3 id="section-2">2.1 优点</h3>
+
+<ul>
+  <li>代码无入侵 <a href="http://avro.apache.org/docs/current/gettingstartedjava.html#Serializing+and+deserializing+without+code+generation">无须入侵的代码方案</a></li>
+  <li>rpc和存储统一的方案</li>
+  <li>数据自完备</li>
+  <li>hadoop平台的良好支持</li>
+  <li><a href="http://avro.apache.org/docs/current/api/java/org/apache/avro/reflect/package-summary.html#package_description">java代码生产schema</a></li>
+</ul>
+
+<h3 id="section-3">2.2 缺点</h3>
+
+<ul>
+  <li>linux的运维方案不再支持了。统计统计数据啊~用awk+wc -l等</li>
+</ul>
+
+<h3 id="usage">2.3 Usage</h3>
+
+<ul>
+  <li>通常使用</li>
+</ul>
+
+<h3 id="section-4">2.3 疑问</h3>
+
+<ul>
+  <li>序列化 循环引用？ RPC需要考虑</li>
+  <li>schema 不一致问题？</li>
+</ul>
+
+<h2 id="section-5">3 参考</h2>
+
+<ul>
+  <li><a href="http://avro.apache.org/docs/current/spec.html">avro 主页 spec</a></li>
+</ul>
